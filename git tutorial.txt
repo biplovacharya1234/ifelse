@@ -1,0 +1,100 @@
+<!-- repo/repository - folder
+local repo- folder in our system
+remote repo - folder in the github -->
+
+<!-- initial setup -->
+
+git init
+<!-- link local file to github -->
+git remote add origin "url"
+<!-- to check if linked with remote repository -->
+git remote -v
+
+<!-- Frequently used codes -->
+
+<!-- to know the difference in files of local and remote repo -->
+git status
+<!-- to push the code the remote repo  -->
+git add . <!-- . means all files -->
+<!-- to put message -->
+git commit -m "html-css"
+<!--  to configure for first time or login user of github -->
+git config -- global user.email "your github email id"
+git config -- global user.name "your user name"
+
+<!-- for final upload -->
+git push
+<!-- and copy the code in next step given in the terminal -->
+
+<!-- u - new files/untracked files
+    a- added
+    m - modified -->
+
+<!-- to clone repo in your local device -->(do this in terminal or gitbash)
+git clone "link of repo"
+
+<!-- how to download the updated code of repo -->(this part is to be done in VS code)
+git status 
+<!-- this is to check status -->(this part is to be done in VS code)
+git pull
+<!--  this is to pull new updated code from github repo to local device -->
+<!-- to open VS code from cmd  -->
+code .
+blah blah
+
+
+git config --global --edit (with this you can change directly to config file)
+Using Vim (Vi IMproved):
+
+To save changes and exit Vim, follow these steps:
+Press Esc to ensure you're in command mode.
+Type :w and press Enter to save the file.
+Type :q and press Enter to quit Vim
+
+mkdir "file name" (make directory/make folder this is done in terminal to create a file in local device through VS code or terminal)
+
+ls
+ls -a
+
+stagging area (git add hello.js/git add .)
+
+git log (to check how many commits have been made previously)
+
+ctrl + k - to clear the terminal
+
+install fish cell for auto complete
+
+** checkout command to go to particular commit
+git checkout "commithash code / branch name"
+
+** to comeback to the main file/latest file
+git checkout master
+
+**** to create branch
+git branch "branch name"
+
+** to check the name of the branches we have
+git branch
+
+** to checkout and create branch at once
+git checkout -b biplov/addition
+
+Delete the branch:
+
+To delete a branch that has been fully merged into the main branch (usually master or main), you can use:
+
+bash
+Copy code
+git branch -d branch_name
+To forcefully delete a branch, whether it's fully merged or not, you can use:
+
+bash
+Copy code
+git branch -D branch_name
+Replace branch_name with the name of the branch you want to delete.
+
+*** to merge folder / bring files from another folder
+git merge "branch name"
+
+
+
